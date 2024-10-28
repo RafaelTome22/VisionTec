@@ -1,0 +1,269 @@
+/* Reset básico */
+
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section, div {
+  opacity: 1; /* Conteúdo permanece visível */
+  transform: translateY(0); /* Sem deslocamento inicial */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* Suavidade na entrada */
+}
+
+/* Animação suave na entrada */
+section, div {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.scanner {
+    font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+    background: url('../assets/scanner/Background.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    width: 99%;
+    display: flex;
+}
+
+.scanner-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cl-btn-pesquisa {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-pesquisa {
+    width: 400px;
+    height: 42px;
+    border-radius: 50px;
+    border-style: none;
+    font-family: 'Nexa', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #324a84;
+}
+
+.img-scanner {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+}
+
+.form-scanner {
+    width: 45%;
+}
+
+.form {
+    margin-top: 180px;
+    height: 80%;
+}
+
+.formulario .campo {
+    display: flex;
+    align-items: center;
+    width: 475px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    font-size: 40px;
+    position: relative;
+    transform: translateX(50px); /* Move todos os itens 50px para a direita */
+}
+
+/* Alinhamento gradual dos labels */
+.formulario .campo:nth-child(1) label {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #324a84;
+    transform: translateX(375px);
+    font-family: "Nexa-bold", sans-serif;
+    font-weight: 700;
+}
+
+.formulario .campo:nth-child(2) label {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #324a84;
+    transform: translateX(325px);
+    font-family: "Nexa-bold", sans-serif;
+    font-weight: 700;
+}
+
+.formulario .campo:nth-child(3) label {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #324a84;
+    transform: translateX(275px);
+    font-family: "Nexa-bold", sans-serif;
+    font-weight: 700;
+}
+
+.formulario .campo:nth-child(4) label {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #324a84;
+    transform: translateX(225px);
+    font-family: "Nexa-bold", sans-serif;
+    font-weight: 700;
+}
+
+.formulario .campo:nth-child(5) label {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #324a84;
+    transform: translateX(175px);
+    font-family: "Nexa-bold", sans-serif;
+    font-weight: 700;
+}
+
+.formulario .campo:nth-child(6) label {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #324a84;
+    transform: translateX(125px);
+    font-family: "Nexa-bold", sans-serif;
+    font-weight: 700;
+}
+
+/* Alinhamento gradual das bordas em vermelho */
+.formulario .campo:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 325px;
+    width: 100%;
+    height: 2px;
+    background-color: #324a84;
+}
+
+.formulario .campo:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 275px;
+    width: 100%;
+    height: 2px;
+    background-color: #324a84;
+}
+
+.formulario .campo:nth-child(3)::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 225px;
+    width: 100%;
+    height: 2px;
+    background-color: #324a84;
+}
+
+.formulario .campo:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 175px;
+    width: 100%;
+    height: 2px;
+    background-color: #324a84;
+}
+
+.formulario .campo:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 125px;
+    width: 100%;
+    height: 2px;
+    background-color: #324a84;
+}
+
+.formulario .campo:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+}
+
+.formulario .campo:nth-child(1) p {
+    transform: translateX(425px);
+}
+
+.formulario .campo:nth-child(2) p {
+    transform: translateX(375px);
+}
+
+.formulario .campo:nth-child(3) p {
+    transform: translateX(225px);
+}
+
+.formulario .campo:nth-child(4) p {
+    transform: translateX(200px);
+}
+
+.formulario .campo:nth-child(5) p {
+    transform: translateX(250px);
+}
+
+.formulario .campo:nth-child(6) p {
+    transform: translateX(-50px);
+}
+
+
+.formulario p {
+    font-size: 22px;
+    text-align: right;
+    color: #324a84;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    position: absolute;
+    bottom: 10px;
+    max-width: 150px;
+    width: 150px;
+    filter: brightness(0) saturate(100%) invert(29%) sepia(33%) saturate(1935%) hue-rotate(207deg) brightness(81%) contrast(97%);
+}
+
+
+

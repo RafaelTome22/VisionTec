@@ -1,0 +1,362 @@
+/* Reset básico */
+
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* TELA DE APRESENTAÇÃO */
+.apresentacao {
+    font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+    background: url('../assets/pagina-inicial/Fundo.png') no-repeat center center/cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo img {
+    width: 80px;
+    margin-left: 20px;
+  }
+  
+  .nav-links {
+    margin-left: 550px;
+    display: flex;
+    list-style: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(221, 221, 221);
+    position: fixed;
+    z-index: 1000;
+  }
+  
+  .nav-links li {
+    border-right: 3px solid #324a84;
+    padding: 0px 10px;
+  }
+
+  .nav-links :last-child {
+    border-style: none;
+  }
+  
+  .nav-links a {
+    font-family: 'Nexa-bold', sans-serif; 
+    font-size: 22px;
+    color: #324a84;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .social-icons img {
+    width: 50px;
+    margin-left: 30px;
+  }
+
+
+  .social-icons :last-child {
+    margin-right: 10px;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .hero {
+    position: relative;
+  }
+  
+  .hero-text img {
+    margin-top: 200px;
+    max-width: 1100px;
+    margin-left: 20px;
+  }
+/* FIM DA TELA DE APRESENTAÇÃO */
+
+/* TELA SCANNER */
+.scanner {
+    font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+    background: url('../assets/scanner/Background.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* FIM DA TELA SCANNER */
+
+/* TELA QUEM SOMOS */
+/* Estilos para a tela "Quem Somos" */
+.quem-somos {
+    font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+    background: url('../assets/quem-somos/Background.png') no-repeat center center/cover;
+    height: 100vh;
+    position: relative; /* Para o posicionamento do botão */
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px; /* Adiciona espaçamento para o conteúdo da seção */
+}
+
+.img-texto {
+    height: 700px; /* Mantém a altura automática */
+    max-width: 60%; /* Garante que a imagem não extrapole o tamanho do container */
+    margin-left: 20px;
+}
+
+/* Scanner Button */
+.scanner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #324a84;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px; /* Aumentado para proporcionar mais espaço */
+  font-family: 'Nexa', sans-serif;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Certifique-se de que o botão esteja sobre os outros elementos */
+  background-color: #fff;
+  font-size: 20px; /* Reduzido para melhorar o ajuste */
+  font-weight: 700;
+  transition: transform 0.2s ease; /* Efeito de transição */
+  z-index: 1000;
+}
+
+.scanner-btn:hover {
+  transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scanner-btn img {
+    width: 52px;
+    height: 52px;
+}
+
+/* FIM DA TELA QUEM SOMOS */
+
+/* TELA DE SERVIÇOS */
+.servicos {
+  font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+  background: url('../assets/serviços/Background.png') no-repeat center center/cover;
+  background-position: 117px;
+  height: 100vh;
+  position: relative; /* Para o posicionamento do botão */
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px; /* Adiciona espaçamento para o conteúdo da seção */
+}
+
+.img-texto-1 {
+  height: 650px; /* Mantém a altura automática */
+  max-width: 60%; /* Garante que a imagem não extrapole o tamanho do container */
+  margin-left: 650px;
+}
+/* FIM DA TELA DE SERVIÇOS */
+
+/* TELA DE FALE CONOSCO */
+
+.sac {
+  font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+  height: 100vh;
+  position: relative; /* Para o posicionamento do botão */
+  display: flex;
+  color: white;
+  flex-direction: column;
+  padding: 20px; /* Adiciona espaçamento para o conteúdo da seção */
+  background-color: #324a84;
+}
+
+.header-sac {
+  margin-top: 50px;
+  display: flex;
+}
+
+.titulo {
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Nexa-bold', sans-serif;
+  font-weight: 700;
+}
+
+.titulo h1 {
+  margin-left: 100px;
+}
+
+.imagem-logo {
+  display: flex;
+  align-items: center;
+}
+
+.container-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.form {
+  width: 40%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.form input {
+  height: 14%;
+  width: 90%;
+  padding: 2%;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  background-color: #324a84;
+  border-style: none;
+  color: #fff;
+  font-size: 1.2rem; /* Aumenta o tamanho do texto */
+  border: none;
+  outline: none;
+}
+
+.form textarea {
+  height: 50%;
+  width: 90%;
+  padding: 3%;
+  border-radius: 50px;
+  background-color: #324a84;
+  border-style: none;
+  color: #fff;
+  resize: none;
+  font-size: 1.2rem; /* Aumenta o tamanho do texto */
+  outline: none;
+}
+
+.form input:active {
+  border-style: none;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  font-family: 'Nexa-bold', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ls-textarea-autoresize {
+  font-size: 18px;
+}
+
+
+/* FIM DA TELA DE FALE CONOSCO */
+
+footer {
+  background-color: #fff;
+  color: #111;
+  padding: 40px 0px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #324a84;
+  border-bottom: 2px solid #324a84; 
+  display: inline-block; 
+  padding-bottom: 2px; 
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+  color: #324a84;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #324a84;
+}
+
+.footer-section a:hover {
+  color: #283b68;
+}
+
+.logo-footer {
+  max-width: 150px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(33%) saturate(1935%) hue-rotate(207deg) brightness(81%) contrast(97%);
+}
+
+.social-icons-footer img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-section p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-footer {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 20px;
+  width: 100%;
+}

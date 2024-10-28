@@ -1,0 +1,161 @@
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+    background: url('../assets/Fundo-Login.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* fundo escuro com transparência */
+    padding: 20px;
+}
+
+.login-box {
+    text-align: center;
+    max-width: 400px; /* Mantém a largura máxima da caixa */
+    width: 100%;
+}
+
+.logo img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    letter-spacing: 0.5px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.login-form input {
+    width: 180px; /* Ajustado para 180px */
+    padding: 3px; /* Padding ajustado para 3px */
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 14px; /* Diminui o tamanho da fonte */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Nexa', sans-serif; /* Usar Nexa nos inputs */
+}
+
+.login-form input::placeholder {
+    color: gray;
+    font-weight: bold;
+}
+
+/* Botão de Acessar */
+.login-form button {
+    width: 180px; /* Ajustado para 180px */
+    padding: 3px; /* Padding ajustado para 3px */
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form button:hover {
+    background-color: #f1f1f1; /* Efeito hover no botão */
+}
+
+.forgot-password {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px; /* Espaçamento do botão para o link de esqueci a senha */
+}
+
+.style-pass {
+    font-family: "Nexa", sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 12px;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 50px; /* Ajuste do logo para telas menores */
+    }
+
+    .login-form input, .login-form button {
+        width: 100%; /* Inputs e botão ocupando 100% da largura do container */
+    }
+
+    footer {
+        font-size: 10px; /* Diminuir a fonte do footer em dispositivos menores */
+    }
+}
+
+/* Para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    .login-form input, .login-form button {
+        font-size: 12px; /* Diminuir o tamanho da fonte dos inputs e botão */
+        padding: 3px; /* Padding para dispositivos menores */
+    }
+
+    footer {
+        font-size: 9px;
+    }
+}
+
+/* Para telas maiores que 1200px (monitores grandes) */
+@media (min-width: 1200px) {
+    .login-box {
+        max-width: 500px; /* Aumentar a largura máxima para telas grandes */
+    }
+
+    .login-form input, .login-form button {
+        width: 180px; /* Inputs e botão mantêm 180px */
+    }
+}

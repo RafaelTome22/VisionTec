@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/scanner.css">
+    <title>Scanner - Vision Tec</title>
+</head>
+<body>
+    <div class="scanner">
+        <div class="container">
+            <div class="scanner-text">
+                <div class="cl-btn-pesquisa">
+                    <button class="btn-pesquisa">Inserir Dado Selecioado</button>
+                    <input type="text" id="pecaIdInput" placeholder="Digite o ID da Peça" />
+                        <button onclick="buscarPeca()">Buscar Peça</button>
+                </div>
+                <div class="img-scanner">
+                    <img src="../assets/scanner/scanner.png" alt="">
+                </div>
+            </div>
+
+            <div class="form-scanner">
+                <div class="form">
+                        <!--<input type="text" id="pecaIdInput" placeholder="Digite o ID da Peça" />
+                        <button onclick="buscarPeca()">Buscar Peça</button>-->
+                        
+                        <div id="formulario" class="formulario">
+                            <div class="campo">
+                                <label for="nome">Nome</label>
+                                <p id="nome" >-</p>
+                            </div>
+                            <div class="campo">
+                                <label for="peca">Peça</label>
+                                <p id="peca">-</p>
+                            </div>
+                            <div class="campo">
+                                <label for="idPeca">ID da Peça</label>
+                                <p id="idPeca">-</p>
+                            </div>
+                            <div class="campo">
+                                <label for="cliente">Cliente</label>
+                                <p id="cliente">-</p>
+                            </div>
+                            <div class="campo">
+                                <label for="setor">Setor</label>
+                                <p id="setor">-</p>
+                            </div>
+                            <div class="campo">
+                                <label for="chegadaSaida">Chegada/Saída</label>
+                                <p id="chegadaSaida">-</p>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="../assets/pagina-inicial/Logo.png" alt="">
+        </div>
+    </div>
+
+    <script src="../js/funcaoBusca.js"></script>
+</body>
+</html>
