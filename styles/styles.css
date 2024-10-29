@@ -8,8 +8,6 @@
 }
 
 
-
-
 /* TELA DE APRESENTAÇÃO */
 .apresentacao {
     font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
@@ -36,7 +34,7 @@ header {
   }
   
   .nav-links {
-    margin-left: 550px;
+    margin-left: 25%;
     display: flex;
     list-style: none;
     background-color: #fff;
@@ -83,7 +81,7 @@ header {
   }
   
   .hero-text img {
-    margin-top: 200px;
+    margin-top: 10%;
     max-width: 1100px;
     margin-left: 20px;
   }
@@ -115,7 +113,7 @@ header {
 }
 
 .img-texto {
-    height: 700px; /* Mantém a altura automática */
+    height: 75%; /* Mantém a altura automática */
     max-width: 60%; /* Garante que a imagem não extrapole o tamanho do container */
     margin-left: 20px;
 }
@@ -169,9 +167,9 @@ header {
 }
 
 .img-texto-1 {
-  height: 650px; /* Mantém a altura automática */
+  height: 65%; /* Mantém a altura automática */
   max-width: 60%; /* Garante que a imagem não extrapole o tamanho do container */
-  margin-left: 650px;
+  margin-left: 40%;
 }
 /* FIM DA TELA DE SERVIÇOS */
 
