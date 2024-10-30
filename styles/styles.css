@@ -195,6 +195,31 @@ header {
 
 /* FIM DA TELA QUEM SOMOS */
 
+.servicos {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+  background: url('../assets/sources/sources/BackgroundGray.png') no-repeat center center/cover;
+}
+
+.img-servicos {
+  height: 70%;
+}
+
+.fale-conosco {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-faleConosco {
+  height: 85%;
+}
+
 footer {
   background-color: #fff;
   color: #111;
