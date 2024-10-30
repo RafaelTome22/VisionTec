@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 /* TELA DE APRESENTAÇÃO */
 .apresentacao {
@@ -34,8 +37,7 @@ header {
   }
   
   .nav-links {
-    margin-left: 25%;
-    width: 47.5%;
+    margin-left: 30%;
     display: flex;
     list-style: none;
     background-color: #fff;
@@ -79,46 +81,16 @@ header {
   }
   
   .hero {
-    position: relative;
-  }
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
   
   .hero-text img {
-    margin-top: 10%;
     max-width: 1100px;
     margin-left: 20px;
   }
 /* FIM DA TELA DE APRESENTAÇÃO */
-
-/* TELA SCANNER */
-.scanner {
-    font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
-    background: url('../assets/scanner/Background.png') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-/* FIM DA TELA SCANNER */
-
-/* TELA QUEM SOMOS */
-/* Estilos para a tela "Quem Somos" */
-.quem-somos {
-    font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
-    background: url('../assets/quem-somos/Background.png') no-repeat center center/cover;
-    height: 100vh;
-    position: relative; /* Para o posicionamento do botão */
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 20px; /* Adiciona espaçamento para o conteúdo da seção */
-}
-
-.img-texto {
-    height: 75%; /* Mantém a altura automática */
-    max-width: 60%; /* Garante que a imagem não extrapole o tamanho do container */
-    margin-left: 20px;
-}
 
 /* Scanner Button */
 .scanner-btn {
@@ -153,128 +125,75 @@ header {
     height: 52px;
 }
 
-/* FIM DA TELA QUEM SOMOS */
-
-/* TELA DE SERVIÇOS */
-.servicos {
+.info-projetos {
+  width: 100vw;
   font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
-  background: url('../assets/serviços/Background.png') no-repeat center center/cover;
-  background-position: 117px;
-  height: 100vh;
-  position: relative; /* Para o posicionamento do botão */
-  display: flex;
-  align-items: center;
-  color: white;
-  padding: 20px; /* Adiciona espaçamento para o conteúdo da seção */
+  background: url('../assets/sources/sources/BackgroundGray.png') no-repeat center center/cover;
 }
 
-.img-texto-1 {
-  height: 65%; /* Mantém a altura automática */
-  max-width: 60%; /* Garante que a imagem não extrapole o tamanho do container */
-  margin-left: 40%;
-}
-/* FIM DA TELA DE SERVIÇOS */
-
-/* TELA DE FALE CONOSCO */
-
-.sac {
-  font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
-  height: 100vh;
-  position: relative; /* Para o posicionamento do botão */
-  display: flex;
-  color: white;
-  flex-direction: column;
-  padding: 20px; /* Adiciona espaçamento para o conteúdo da seção */
-  background-color: #324a84;
-}
-
-.header-sac {
-  margin-top: 50px;
-  display: flex;
-}
-
-.titulo {
-  width: 93%;
+.titulo-info {
+  width: 100vw;
+  height: 10%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  font-family: 'Nexa-bold', sans-serif;
-  font-weight: 700;
+  margin-top: 20px;
 }
 
-.titulo h1 {
-  margin-left: 100px;
+.titulo-info-texto {
+  font-family: "Nexa", sans-serif;
+  color: #324a84;
 }
 
-.imagem-logo {
+.container-card-info {
+  margin-top: 20px;
+  width: 100vw;
+  height: 30%;
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
-.container-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
-}
-
-.form {
-  width: 40%;
-  height: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 50px;
-  color: #fff;
-}
-
-.form input {
-  height: 14%;
-  width: 90%;
-  padding: 2%;
-  margin-bottom: 20px;
-  border-radius: 50px;
-  background-color: #324a84;
-  border-style: none;
-  color: #fff;
-  font-size: 1.2rem; /* Aumenta o tamanho do texto */
-  border: none;
-  outline: none;
-}
-
-.form textarea {
+.card-info {
+  border-top: 2px solid #324a84;
+  width: 22%;
   height: 50%;
-  width: 90%;
-  padding: 3%;
-  border-radius: 50px;
-  background-color: #324a84;
-  border-style: none;
-  color: #fff;
-  resize: none;
-  font-size: 1.2rem; /* Aumenta o tamanho do texto */
-  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
-.form input:active {
-  border-style: none;
-}
-
-::-webkit-input-placeholder {
-  color: #fff;
-  font-family: 'Nexa-bold', sans-serif;
-  font-size: 24px;
+.card-info-num {
+  font-size: 100px;
+  font-family: "Nexa-bold", sans-serif;
   font-weight: 700;
+  color: #324a84;
 }
 
-.ls-textarea-autoresize {
-  font-size: 18px;
+.card-info-txt {
+  font-size: 40px;
+  font-family: "Nexa-bold", sans-serif;
+  font-weight: 700;
+  color: #324a84;
+  margin-bottom: 20px;
 }
 
+.card-quemSomos {
+  margin-top: 100px;
+  width: 100vw;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* FIM DA TELA DE FALE CONOSCO */
+.img-card-quemSomos {
+  width: 60%;
+}
+
+/* FIM DA TELA QUEM SOMOS */
 
 footer {
   background-color: #fff;
