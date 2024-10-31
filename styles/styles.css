@@ -136,12 +136,12 @@ header {
   height: 10%;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .titulo-info-texto {
   font-family: "Nexa", sans-serif;
   color: #324a84;
+  margin-top: 20px;
 }
 
 .container-card-info {
@@ -193,11 +193,46 @@ header {
   width: 60%;
 }
 
+.btn {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  align-items: end;
+}
+
+.btn-saibaMais {
+  padding: 10px 30px;
+  background-color: #324a84;
+  color: #fff;
+  font-family: "Nexa-bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  border-style: none;
+  letter-spacing: 1px;
+}
+
+.img-logo-btn {
+  width: 35px;
+  margin-left: 10px;
+}
+
+.btn-saibaMais:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* FIM DA TELA QUEM SOMOS */
 
 .servicos {
   height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -207,6 +242,37 @@ header {
 
 .img-servicos {
   height: 70%;
+}
+
+.btn-servicos {
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn-iniciarProjeto {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #324a84;
+  color: #fff;
+  font-family: "Nexa-bold", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  border-style: none;
+}
+
+.btn-iniciarProjeto:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fale-conosco {
