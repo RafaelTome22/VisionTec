@@ -128,7 +128,7 @@ header {
 .info-projetos {
   width: 100vw;
   font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
-  background: url('../assets/sources/sources/BackgroundGray.png') no-repeat center center/cover;
+  background: url('../assets/sources/sources/Background.png') no-repeat center center/cover;
 }
 
 .titulo-info {
@@ -237,11 +237,10 @@ header {
   align-items: center;
   width: 100vw;
   font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
-  background: url('../assets/sources/sources/BackgroundGray.png') no-repeat center center/cover;
 }
 
 .img-servicos {
-  height: 70%;
+  height: 60%;
 }
 
 .btn-servicos {
@@ -284,6 +283,70 @@ header {
 
 .img-faleConosco {
   height: 85%;
+}
+
+.container-form {
+  width: 65%;
+  height: 55%;
+  position: absolute;
+  align-items: center;
+  display: flex;
+}
+
+.form {
+  width: 51.5%;
+  height: 83%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.input-form-faleConosco {
+  border-radius: 50px;
+  background-color: #fff;
+  width: 100%;
+  border-style: none;
+  height: 11%;
+  padding: 0px 10px;
+  color: #324a84;
+  font-size: 22px;
+  font-family: "Nexa", sans-serif;
+  font-weight: 300;
+}
+
+.input-form-faleConosco::placeholder {
+  color: #324a84;
+  font-size: 22px;
+  font-family: "Nexa", sans-serif;
+  font-weight: 300;
+}
+
+.txt-form-faleConosco {
+  background-color: #fff;
+  border-radius: 50px;
+  border-style: none;
+  height: 45%;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  color: #324a84;
+  font-family: "Nexa", sans-serif;
+  font-weight: 300;
+}
+
+
+.btn-form-faleConosco {
+  background-color: #fff;
+  border-radius: 50px;
+  border-style: none;
+  height: 9%;
+  width: 30%;
+  color: #324a84;
+  font-family: "Nexa", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 footer {
