@@ -35,7 +35,7 @@ section, div {
 
 .scanner {
     font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
-    background: url('../assets/scanner/Background.png') no-repeat center center/cover;
+    background: url('../assets/sourceScanner/sourceScanner/Scanner.png') no-repeat center center;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -44,226 +44,65 @@ section, div {
 }
 
 .container {
-    height: 100vh;
-    width: 99%;
+    padding: 2%;
+    width: 72%;
     display: flex;
-}
-
-.scanner-text {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-}
-
-.cl-btn-pesquisa {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.btn-pesquisa {
-    width: 400px;
-    height: 42px;
-    border-radius: 50px;
-    border-style: none;
-    font-family: 'Nexa', sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    color: #324a84;
-}
-
-.img-scanner {
-    height: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: invert(100%);
-}
-
-.form-scanner {
-    width: 45%;
 }
 
 .form {
-    margin-top: 180px;
-    height: 80%;
-}
-
-.formulario .campo {
     display: flex;
-    align-items: center;
-    width: 475px;
-    margin-bottom: 20px;
-    padding: 5px 0;
-    font-size: 40px;
-    position: relative;
-    transform: translateX(50px); /* Move todos os itens 50px para a direita */
+    flex-direction: column;
+    width: 55%;
+    padding: 3.3%;
+    height: 650px;
 }
 
-/* Alinhamento gradual dos labels */
-.formulario .campo:nth-child(1) label {
-    font-weight: bold;
-    margin-bottom: 30px;
+.form-busca {
+    height: 25%;
+}
+
+.busca {
+    height: 25%;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 20px;
     color: #324a84;
-    transform: translateX(375px);
     font-family: "Nexa-bold", sans-serif;
     font-weight: 700;
-}
-
-.formulario .campo:nth-child(2) label {
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #324a84;
-    transform: translateX(325px);
-    font-family: "Nexa-bold", sans-serif;
-    font-weight: 700;
-}
-
-.formulario .campo:nth-child(3) label {
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #324a84;
-    transform: translateX(275px);
-    font-family: "Nexa-bold", sans-serif;
-    font-weight: 700;
-}
-
-.formulario .campo:nth-child(4) label {
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #324a84;
-    transform: translateX(225px);
-    font-family: "Nexa-bold", sans-serif;
-    font-weight: 700;
-}
-
-.formulario .campo:nth-child(5) label {
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #324a84;
-    transform: translateX(175px);
-    font-family: "Nexa-bold", sans-serif;
-    font-weight: 700;
-}
-
-.formulario .campo:nth-child(6) label {
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #324a84;
-    transform: translateX(125px);
-    font-family: "Nexa-bold", sans-serif;
-    font-weight: 700;
-}
-
-/* Alinhamento gradual das bordas em vermelho */
-.formulario .campo:nth-child(1)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 325px;
-    width: 100%;
-    height: 2px;
-    background-color: #324a84;
-}
-
-.formulario .campo:nth-child(2)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 275px;
-    width: 100%;
-    height: 2px;
-    background-color: #324a84;
-}
-
-.formulario .campo:nth-child(3)::after {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 225px;
-    width: 100%;
-    height: 2px;
-    background-color: #324a84;
-}
-
-.formulario .campo:nth-child(4)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 175px;
-    width: 100%;
-    height: 2px;
-    background-color: #324a84;
-}
-
-.formulario .campo:nth-child(5)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 125px;
-    width: 100%;
-    height: 2px;
-    background-color: #324a84;
-}
-
-.formulario .campo:nth-child(6)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 75px;
-    width: 100%;
-    height: 3px;
-    background-color: transparent;
-}
-
-.formulario .campo:nth-child(1) p {
-    transform: translateX(425px);
-}
-
-.formulario .campo:nth-child(2) p {
-    transform: translateX(375px);
-}
-
-.formulario .campo:nth-child(3) p {
-    transform: translateX(225px);
-}
-
-.formulario .campo:nth-child(4) p {
-    transform: translateX(200px);
-}
-
-.formulario .campo:nth-child(5) p {
-    transform: translateX(250px);
-}
-
-.formulario .campo:nth-child(6) p {
-    transform: translateX(-50px);
-}
-
-
-.formulario p {
-    font-size: 22px;
-    text-align: right;
-    color: #324a84;
-    margin-top: 50px;
     text-align: center;
 }
 
-.logo {
-    width: 10%;
-    display: flex;
-    justify-content: center;
+.busca:focus {
+    outline: none; /* Remove o contorno padrão */
+    border: none; /* Remove a borda */
 }
 
-.logo img {
-    position: absolute;
-    bottom: 10px;
-    max-width: 150px;
-    width: 150px;
-    filter: brightness(0) saturate(100%) invert(29%) sepia(33%) saturate(1935%) hue-rotate(207deg) brightness(81%) contrast(97%);
+.form-result {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
 }
+
+.input {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    padding: 2%;
+    align-items: flex-end;
+}
+
+
+.p-info {
+    font-size: 23px;
+    font-family: "Nexa-bold", sans-serif;
+    font-weight: 700;
+}
+
+
 
 
 

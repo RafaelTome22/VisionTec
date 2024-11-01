@@ -334,6 +334,7 @@ header {
   color: #324a84;
   font-family: "Nexa", sans-serif;
   font-weight: 300;
+  resize: none;
 }
 
 
@@ -347,6 +348,10 @@ header {
   font-family: "Nexa", sans-serif;
   font-size: 24px;
   font-weight: 300;
+}
+
+.btn-form-faleConosco:hover {
+  transform: scale(1.1);
 }
 
 footer {
