@@ -1,6 +1,19 @@
 /* Reset básico */
 
-@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+@font-face {
+  font-family: "Nexa";
+  src: url('../assets/nexa/Nexa-ExtraLight.ttf') format('truetype');
+  font-weight: 300; /* Peso ExtraLight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url('../assets/nexa/Nexa-Heavy.ttf') format('truetype'); /* Certifique-se de que o caminho e o nome do arquivo estejam corretos */
+  font-weight: 700; /* Peso Bold */
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +24,14 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth; /* Ativa a rolagem suave em toda a página */
+}
+
+
+
 /* TELA DE APRESENTAÇÃO */
 .apresentacao {
-    font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
     background: url('../assets/pagina-inicial/Fundo.png') no-repeat center center/cover;
     height: 100vh;
 }
@@ -49,7 +67,7 @@ header {
   }
   
   .nav-links li {
-    border-right: 3px solid #324a84;
+    border-right: 1px solid #324a84;
     padding: 0px 10px;
   }
 
@@ -58,7 +76,7 @@ header {
   }
   
   .nav-links a {
-    font-family: 'Nexa-bold', sans-serif; 
+    font-family: "Nexa", sans-serif; 
     font-size: 22px;
     color: #324a84;
     text-decoration: none;
@@ -113,6 +131,7 @@ header {
   font-weight: 700;
   transition: transform 0.2s ease; /* Efeito de transição */
   z-index: 1000;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .scanner-btn:hover {
@@ -140,6 +159,7 @@ header {
 
 .titulo-info-texto {
   font-family: "Nexa", sans-serif;
+  font-weight: 700;
   color: #324a84;
   margin-top: 20px;
 }
@@ -167,14 +187,14 @@ header {
 
 .card-info-num {
   font-size: 100px;
-  font-family: "Nexa-bold", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-weight: 700;
   color: #324a84;
 }
 
 .card-info-txt {
   font-size: 40px;
-  font-family: "Nexa-bold", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-weight: 700;
   color: #324a84;
   margin-bottom: 20px;
@@ -205,7 +225,7 @@ header {
   padding: 10px 30px;
   background-color: #324a84;
   color: #fff;
-  font-family: "Nexa-bold", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 30px;
@@ -237,10 +257,11 @@ header {
   align-items: center;
   width: 100vw;
   font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+  font-weight: 700;
 }
 
 .img-servicos {
-  height: 60%;
+  height: 50%;
 }
 
 .btn-servicos {
@@ -257,7 +278,7 @@ header {
   border-radius: 50px;
   background-color: #324a84;
   color: #fff;
-  font-family: "Nexa-bold", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-weight: 700;
   font-size: 25px;
   letter-spacing: 1px;
@@ -282,25 +303,27 @@ header {
 }
 
 .img-faleConosco {
-  height: 85%;
+  height: 75%;
 }
 
 .container-form {
-  width: 65%;
+  width: 60%;
   height: 55%;
   position: absolute;
   align-items: center;
   display: flex;
+
 }
 
 .form {
-  width: 51.5%;
+  width: 53%;
   height: 83%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 40px;
+  padding: 2%;
 }
 
 .input-form-faleConosco {
@@ -308,7 +331,7 @@ header {
   background-color: #fff;
   width: 100%;
   border-style: none;
-  height: 11%;
+  height: 9%;
   padding: 0px 10px;
   color: #324a84;
   font-size: 22px;
@@ -320,7 +343,7 @@ header {
   color: #324a84;
   font-size: 22px;
   font-family: "Nexa", sans-serif;
-  font-weight: 300;
+  font-weight: 00;
 }
 
 .txt-form-faleConosco {

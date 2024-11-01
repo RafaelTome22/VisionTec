@@ -9,7 +9,7 @@
 <body>
 
 <!--TELA DE APRESENTAÇÃO-->
-<div id="inicio" class="apresentacao">
+<div id="inicio" class="apresentacao active">
     <header>
         <nav class="menu">
           <div class="logo">
@@ -49,17 +49,17 @@
 
   <div class="container-card-info">
     <div class="card-info">
-        <p class="card-info-num">+ 4000</p>
+        <p class="card-info-num">+ 10</p>
         <p class="card-info-txt">Parcerias Fechadas</p>
     </div>
 
     <div class="card-info">
-      <p class="card-info-num">+ 10000</p>
+      <p class="card-info-num">+ 20</p>
         <p class="card-info-txt">Projetos Entregues</p>
     </div>
 
     <div class="card-info">
-      <p class="card-info-num">+ 3000</p>
+      <p class="card-info-num">+ 10</p>
         <p class="card-info-txt">Colaboradores</p>
     </div>
   </div>
@@ -73,14 +73,14 @@
   </div>
 </div>
 
-<div class="servicos">
+<div class="servicos" id="servicos">
   <img src="../assets/sources/sources/ServiçosTXT.png" alt="img servicos fornecidos" class="img-servicos">
   <div class="btn-servicos">
     <button class="btn-iniciarProjeto">Iniciar Projeto <img src="../assets/pagina-inicial/Logo.png" alt="logo"  class="img-logo-btn"></button>
   </div>
 </div>
 
-<div class="fale-conosco">
+<div class="fale-conosco" id="contato">
   <img src="../assets/sources/sources/FaleConoscoBASE.png" alt="img do formulario de fale Conosco" class="img-faleConosco">
   <div class="container-form">
     <div class="form">
@@ -126,6 +126,27 @@
   </div>
 </footer>
 
+
+<script>
+  // Função para troca de tela
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+
+          targetElement.scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+
+  // Inicializa a tela de apresentação
+  document.addEventListener('DOMContentLoaded', () => {
+      trocarTela('inicio'); // Mostra a tela de apresentação quando a página é carregada
+  });
+</script>
 
 <script src="../js/funcaoBusca.js"></script>
 </body>
