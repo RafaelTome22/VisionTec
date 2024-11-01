@@ -29,6 +29,26 @@
         </footer>
     </div>
 </body>
+
+<script>
+    // Verifica o login
+    document.querySelector('.login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio padrão do formulário
+    
+        // Credenciais de teste
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+    
+        if (username === 'visioncompany@tec.com.br' && password === 'Sc4n*RF1D#') {
+            // Redireciona para a tela do scanner se as credenciais estiverem corretas
+            alert('Login bem-sucedido! Redirecionando para o scanner...');
+            window.location.href = 'scanner.html'; // Altere para o caminho correto da tela do scanner
+        } else {
+            // Mostra uma mensagem de erro se as credenciais estiverem incorretas
+            alert('Usuário ou senha incorretos. Tente novamente.');
+        }
+    });
+    </script>
 </html>
 
 

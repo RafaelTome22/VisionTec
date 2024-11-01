@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scannerButtons = document.querySelectorAll('.scanner-btn');
     scannerButtons.forEach(button => {
         button.addEventListener('click', function() {
-            window.open('scanner.html', '_blank');
+            window.open('login.html', '_blank');
         });
     });
 });
@@ -117,3 +117,4 @@ document.querySelector(".busca").addEventListener("keydown", function (event) {
         atualizarInformacoes(id);
     }
 });
+
