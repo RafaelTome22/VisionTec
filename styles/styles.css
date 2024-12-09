@@ -15,99 +15,97 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   overflow-x: hidden;
+  font-size: 1rem; /* Base de cálculo para rem */
 }
 
 html {
   scroll-behavior: smooth; /* Ativa a rolagem suave em toda a página */
 }
 
-
-
 /* TELA DE APRESENTAÇÃO */
 .apresentacao {
-    background: url('../assets/pagina-inicial/Fundo.png') no-repeat center center/cover;
-    height: 100vh;
+  background: url('../assets/pagina-inicial/Fundo.png') no-repeat center center/cover;
+  height: 100vh;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .logo img {
-    width: 80px;
-    margin-left: 20px;
-  }
-  
-  .nav-links {
-    margin-left: 30%;
-    display: flex;
-    list-style: none;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(221, 221, 221);
-    position: fixed;
-    z-index: 1000;
-  }
-  
-  .nav-links li {
-    border-right: 1px solid #324a84;
-    padding: 0px 10px;
-  }
-
-  .nav-links :last-child {
-    border-style: none;
-  }
-  
-  .nav-links a {
-    font-family: "Nexa", sans-serif; 
-    font-size: 22px;
-    color: #324a84;
-    text-decoration: none;
-    font-weight: 700;
-    width: 100%;
-  }
-  
-  .social-icons img {
-    width: 50px;
-    margin-left: 30px;
-  }
-
-
-  .social-icons :last-child {
-    margin-right: 10px;
-  }
-
-  .social-icons img:hover {
-    transform: scale(1.1);
-  }
-  
-  .hero {
-    height: 80vh;
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem; /* 20px convertidos */
 }
-  
-  .hero-text img {
-    max-width: 1100px;
-    margin-left: 20px;
-  }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img {
+  width: 5rem; /* 80px convertidos */
+  margin-left: 1.25rem; /* 20px convertidos */
+}
+
+.nav-links {
+  margin-left: 30%;
+  display: flex;
+  list-style: none;
+  background-color: #fff;
+  padding: 0.625rem 1.25rem; /* 10px 20px convertidos */
+  border-radius: 3.125rem; /* 50px convertidos */
+  box-shadow: 0 0 0.625rem rgba(221, 221, 221, 1); /* 10px convertidos */
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav-links li {
+  border-right: 0.0625rem solid #324a84; /* 1px convertidos */
+  padding: 0 0.625rem; /* 10px convertidos */
+}
+
+.nav-links :last-child {
+  border-style: none;
+}
+
+.nav-links a {
+  font-family: "Nexa", sans-serif; 
+  font-size: 1.375rem; /* 22px convertidos */
+  color: #324a84;
+  text-decoration: none;
+  font-weight: 700;
+  width: 100%;
+}
+
+.social-icons img {
+  width: 3.125rem; /* 50px convertidos */
+  margin-left: 1.875rem; /* 30px convertidos */
+}
+
+.social-icons :last-child {
+  margin-right: 0.625rem; /* 10px convertidos */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text img {
+  max-width: 68.75rem; /* 1100px convertidos */
+  margin-left: 1.25rem; /* 20px convertidos */
+}
 /* FIM DA TELA DE APRESENTAÇÃO */
 
 /* Scanner Button */
@@ -117,36 +115,36 @@ header {
   justify-content: center;
   background-color: #fff;
   color: #324a84;
-  border-radius: 50px;
+  border-radius: 3.125rem; /* 50px convertidos */
   border: none;
-  padding: 10px 20px; /* Aumentado para proporcionar mais espaço */
+  padding: 0.625rem 1.25rem; /* 10px 20px convertidos */
   font-family: 'Nexa', sans-serif;
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000; /* Certifique-se de que o botão esteja sobre os outros elementos */
-  background-color: #fff;
-  font-size: 20px; /* Reduzido para melhorar o ajuste */
-  font-weight: 700;
-  transition: transform 0.2s ease; /* Efeito de transição */
+  bottom: 1.25rem; /* 20px convertidos */
+  right: 1.25rem; /* 20px convertidos */
   z-index: 1000;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  font-size: 1.25rem; /* 20px convertidos */
+  font-weight: 700;
+  transition: transform 0.2s ease;
+  z-index: 1000;
+  box-shadow: 0 0.375rem 0.625rem rgba(0, 0, 0, 0.2); /* 6px 10px convertidos */
 }
 
 .scanner-btn:hover {
-  transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 0.375rem 0.625rem rgba(0, 0, 0, 0.2); /* 6px 10px convertidos */
 }
 
 .scanner-btn img {
-    width: 52px;
-    height: 52px;
+  width: 3.25rem; /* 52px convertidos */
+  height: 3.25rem; /* 52px convertidos */
 }
 
 .info-projetos {
   width: 100vw;
-  font-family: 'Nexa', sans-serif; /* Usar Nexa como fonte padrão */
+  font-family: 'Nexa', sans-serif;
   background: url('../assets/sources/sources/Background.png') no-repeat center center/cover;
 }
 
@@ -161,11 +159,11 @@ header {
   font-family: "Nexa", sans-serif;
   font-weight: 700;
   color: #324a84;
-  margin-top: 20px;
+  margin-top: 1.25rem; /* 20px convertidos */
 }
 
 .container-card-info {
-  margin-top: 20px;
+  margin-top: 1.25rem; /* 20px convertidos */
   width: 100vw;
   height: 30%;
   display: flex;
@@ -173,7 +171,7 @@ header {
 }
 
 .card-info {
-  border-top: 2px solid #324a84;
+  border-top: 0.125rem solid #324a84; /* 2px convertidos */
   width: 22%;
   height: 50%;
   display: flex;
@@ -181,27 +179,26 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0.3125rem 0.9375rem; /* 5px 15px convertidos */
 }
 
 .card-info-num {
-  font-size: 100px;
+  font-size: 6.25rem; /* 100px convertidos */
   font-family: "Nexa", sans-serif;
   font-weight: 700;
   color: #324a84;
 }
 
 .card-info-txt {
-  font-size: 40px;
+  font-size: 2.5rem; /* 40px convertidos */
   font-family: "Nexa", sans-serif;
   font-weight: 700;
   color: #324a84;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px convertidos */
 }
 
 .card-quemSomos {
-  margin-top: 100px;
+  margin-top: 6.25rem; /* 100px convertidos */
   width: 100vw;
   height: 40%;
   display: flex;
@@ -222,29 +219,29 @@ header {
 }
 
 .btn-saibaMais {
-  padding: 10px 30px;
+  padding: 0.625rem 1.875rem; /* 10px 30px convertidos */
   background-color: #324a84;
   color: #fff;
   font-family: "Nexa", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 30px;
-  margin-left: 20px;
+  font-size: 1.25rem; /* 20px convertidos */
+  margin-bottom: 1.875rem; /* 30px convertidos */
+  margin-left: 1.25rem; /* 20px convertidos */
   display: flex;
   align-items: center;
   border-style: none;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem; /* 1px convertido */
 }
 
 .img-logo-btn {
-  width: 35px;
-  margin-left: 10px;
+  width: 2.1875rem; /* 35px convertidos */
+  margin-left: 0.625rem; /* 10px convertidos */
 }
 
 .btn-saibaMais:hover {
   cursor: pointer;
   transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.375rem 0.625rem rgba(0, 0, 0, 0.2); /* 6px 10px convertidos */
 }
 
 /* FIM DA TELA QUEM SOMOS */
@@ -270,20 +267,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 3.75rem; /* 60px convertidos */
 }
 
 .btn-iniciarProjeto {
-  padding: 10px 30px;
-  border-radius: 50px;
+  padding: 0.625rem 1.875rem; /* 10px 30px convertidos */
+  border-radius: 3.125rem; /* 50px convertidos */
   background-color: #324a84;
   color: #fff;
   font-family: "Nexa", sans-serif;
   font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  margin-left: 20px;
+  font-size: 1.5625rem; /* 25px convertidos */
+  letter-spacing: 0.0625rem; /* 1px convertido */
+  margin-bottom: 1.875rem; /* 30px convertidos */
+  margin-left: 1.25rem; /* 20px convertidos */
   display: flex;
   align-items: center;
   border-style: none;
@@ -292,7 +289,7 @@ header {
 .btn-iniciarProjeto:hover {
   cursor: pointer;
   transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.375rem 0.625rem rgba(0, 0, 0, 0.2); /* 6px 10px convertidos */
 }
 
 .fale-conosco {
@@ -312,7 +309,6 @@ header {
   position: absolute;
   align-items: center;
   display: flex;
-
 }
 
 .form {
@@ -322,54 +318,53 @@ header {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 2.5rem; /* 40px convertidos */
   padding: 2%;
 }
 
 .input-form-faleConosco {
-  border-radius: 50px;
+  border-radius: 3.125rem; /* 50px convertidos */
   background-color: #fff;
   width: 100%;
   border-style: none;
   height: 9%;
-  padding: 0px 10px;
+  padding: 0 0.625rem; /* 10px convertidos */
   color: #324a84;
-  font-size: 22px;
+  font-size: 1.375rem; /* 22px convertidos */
   font-family: "Nexa", sans-serif;
   font-weight: 300;
 }
 
 .input-form-faleConosco::placeholder {
   color: #324a84;
-  font-size: 22px;
+  font-size: 1.375rem; /* 22px convertidos */
   font-family: "Nexa", sans-serif;
-  font-weight: 00;
+  font-weight: 300;
 }
 
 .txt-form-faleConosco {
   background-color: #fff;
-  border-radius: 50px;
+  border-radius: 3.125rem; /* 50px convertidos */
   border-style: none;
   height: 45%;
   width: 100%;
-  padding: 20px;
-  font-size: 18px;
+  padding: 1.25rem; /* 20px convertidos */
+  font-size: 1.125rem; /* 18px convertidos */
   color: #324a84;
   font-family: "Nexa", sans-serif;
   font-weight: 300;
   resize: none;
 }
 
-
 .btn-form-faleConosco {
   background-color: #fff;
-  border-radius: 50px;
+  border-radius: 3.125rem; /* 50px convertidos */
   border-style: none;
   height: 9%;
   width: 30%;
   color: #324a84;
   font-family: "Nexa", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px convertidos */
   font-weight: 300;
 }
 
